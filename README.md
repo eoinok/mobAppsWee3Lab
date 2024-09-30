@@ -25,9 +25,16 @@ To use this componenet in your app. Add the <Logo/> inside the <View> </View> ta
 Add the following three <TextInput> components inside the <View></View> tags below the <Logo/> tag in your App.js.
 ```
 <TextInput placeholder="Enter your firstname" onChangeText={(val) => setFname(val)}/>
-<TextInput placeholder="Enter your lastname" onChangeText={(val) => setFname(val)}/>
-<TextInput placeholder="Enter your date of birth" onChangeText={(val) => setFname(val)}/>
-
+<TextInput placeholder="Enter your lastname" onChangeText={(val) => setLname(val)}/>
+<TextInput placeholder="Enter your date of birth" onChangeText={(val) => setDob(val)}/>
 ```
+
+To create three state variables which can be controlled by useState hooks add the following three lines of code inside your function but before the return ( ) block.
+```
+const [fname, setFname] = useState("");
+const [lname, setLname] = useState("");
+const [dob, setDob = useState("");
+```
+
 
 
