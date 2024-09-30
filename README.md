@@ -22,6 +22,10 @@ export default function Logo() {
 To use this componenet in your app. Add the <Logo/> inside the <View> </View> tags inside your App.js component.
 
 # Step 2 - Adding TextInputs
+To capture some information from the user we need to add state variables and the useState() hook. To import the useState() hook add the following line at the top of App.js
+```
+import React, {useState} from 'react';
+
 Add the following three <TextInput> components inside the <View></View> tags below the <Logo/> tag in your App.js.
 ```
 <TextInput placeholder="Enter your firstname" onChangeText={(val) => setFname(val)}/>
@@ -33,7 +37,7 @@ To create three state variables which can be controlled by useState hooks add th
 ```
 const [fname, setFname] = useState("");
 const [lname, setLname] = useState("");
-const [dob, setDob = useState("");
+const [dob, setDob] = useState("");
 ```
 
 
