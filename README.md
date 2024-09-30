@@ -20,6 +20,7 @@ export default function Logo() {
 }
 ```
 To use this componenet in your app. Add the <Logo/> inside the <View> </View> tags inside your App.js component.
+Save your work to your github repo and commit your changes.
 
 # Step 2 - Adding TextInputs
 To capture some information from the user we need to add state variables and the useState() hook. To import the useState() hook add the following line at the top of App.js
@@ -42,8 +43,20 @@ See if you can type values into your fields without causing errors to appear. If
 ```
 <Text>Hello {fname} {lname}. You were born on {dob}</Text>
 ```
+Save your work and commit your changes.
 
 # Step 3 - Adding a Button
+Add a Button to the list of components you are importing at the top of your file.
+Add the following function inside your App() function but before the return block (either before or after the useState variables)
+```
+function buttonClicked() {
+    Alert.alert("button clicked");
+}
+```
+Add the following JSX code inside the <View></View> tag underneath the three <TextInput>s and the <Text> component.
+```
+<Button title="SUBMIT" onPress={buttonClicked}/>
+```
 
 
 
