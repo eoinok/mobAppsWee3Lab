@@ -21,5 +21,13 @@ export default function Logo() {
 ```
 To use this componenet in your app. Add the <Logo/> inside the <View> </View> tags inside your App.js component.
 
-# Step 2 
+# Step 2 - Adding TextInputs
+Add the following three <TextInput> components inside the <View></View> tags below the <Logo/> tag in your App.js.
+```
+<TextInput placeholder="Enter your firstname" onChangeText={(val) => setFname(val)}/>
+<TextInput placeholder="Enter your lastname" onChangeText={(val) => setFname(val)}/>
+<TextInput placeholder="Enter your date of birth" onChangeText={(val) => setFname(val)}/>
+
+```
+
 
