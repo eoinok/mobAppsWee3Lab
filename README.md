@@ -29,11 +29,11 @@ import React, {useState} from 'react';
 ```
 Then To create three state variables which can be controlled by useState hooks add the following three lines of code inside your function but before the return ( ) block.
 ```
-const [fname, setFname] = useState("");
-const [lname, setLname] = useState("");
-const [dob, setDob] = useState("");
+const [fname, setFname] = useState("Joe");
+const [lname, setLname] = useState("Bloggs");
+const [dob, setDob] = useState("22 August 1990");
 ```
-Add the following three <TextInput> components inside the <View></View> tags below the <Logo/> tag in your App.js.
+Add the following three <TextInput> components inside the <View></View> tags below the <Logo/> tag in your App.js. (**N.B**. To use the TextInput component it must be included in the list of components being imported at the top of the file.)
 ```
 <TextInput placeholder="Enter your firstname" onChangeText={(val) => setFname(val)}/>
 <TextInput placeholder="Enter your lastname" onChangeText={(val) => setLname(val)}/>
@@ -43,6 +43,7 @@ See if you can type values into your fields without causing errors to appear. If
 ```
 <Text>Hello {fname} {lname}. You were born on {dob}</Text>
 ```
+Try this - if it works as you type values into the fields the values in the field at the bottom of the screen should change.
 Save your work and commit your changes.
 
 # Step 3 - Adding a Button
