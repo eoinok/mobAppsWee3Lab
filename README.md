@@ -27,7 +27,7 @@ To capture some information from the user we need to add state variables and the
 ```
 import React, {useState} from 'react';
 ```
-Then To create three state variables which can be controlled by useState hooks add the following three lines of code inside your function but before the return ( ) block.
+Then, to create three state variables which can be controlled by useState hooks add the following three lines of code inside your function but before the return ( ) block.
 ```
 const [fname, setFname] = useState("Joe");
 const [lname, setLname] = useState("Bloggs");
