@@ -12,3 +12,14 @@ To add in this logo to our snack we are going to create it as a separate compone
 
 ```
 import {Image} from 'react-native';
+
+export default function Logo() {
+  return (   
+    <Image source={require('../assets/tudublin.png')}/>
+  )
+}
+```
+To use this componenet in your app. Add the <Logo/> inside the <View> </View> tags inside your App.js component.
+
+# Step 2 
+
