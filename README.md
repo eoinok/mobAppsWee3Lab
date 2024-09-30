@@ -58,7 +58,7 @@ Add the following JSX code inside the <View></View> tag underneath the three <Te
 ```
 <Button title="SUBMIT" onPress={buttonClicked}/>
 ```
-
+Change the buttonClicked function so instead of just saying "button clicked" it displays the firstname, lastname and date of birth entered by the user.
 
 
 
