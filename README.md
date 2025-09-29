@@ -51,7 +51,8 @@ Add a Button to the list of components you are importing at the top of your file
 Add the following function inside your App() function but before the return block (either before or after the useState variables)
 ```
 function buttonClicked() {
-    Alert.alert("button clicked");
+    //Alert.alert("button clicked"); //This works on a mobile phone
+    alert("button clicked"); // this works on the web version - try uncommenting one or the other lines as necessary
 }
 ```
 Add the following JSX code inside the <View></View> tag underneath the three <TextInput>s and the <Text> component.
