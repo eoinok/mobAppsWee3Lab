@@ -48,7 +48,7 @@ Save your work and commit your changes.
 
 # Step 3 - Adding a Button
 Add a Button to the list of components you are importing at the top of your file.
-Add the following function inside your App() function but before the return block (either before or after the useState variables)
+Add the following function **inside your App() function but before the return block** (either before or after the useState variables)
 ```
 function buttonClicked() {
     //Alert.alert("button clicked"); //This works on a mobile phone
