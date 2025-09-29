@@ -35,9 +35,9 @@ const [dob, setDob] = useState("22 August 1990");
 ```
 Add the following three <TextInput> components inside the <View></View> tags below the <Logo/> tag in your App.js. (**N.B**. To use the TextInput component it must be included in the list of components being imported at the top of the file.)
 ```
-<TextInput placeholder="Enter your firstname" onChangeText={(val) => setFname(val)}/>
-<TextInput placeholder="Enter your lastname" onChangeText={(val) => setLname(val)}/>
-<TextInput placeholder="Enter your date of birth" onChangeText={(val) => setDob(val)}/>
+<TextInput placeholder="Enter your firstname" onChangeText={setFname}/>
+<TextInput placeholder="Enter your lastname" onChangeText={setLname}/>
+<TextInput placeholder="Enter your date of birth" onChangeText={setDob}/>
 ```
 See if you can type values into your fields without causing errors to appear. If you can, add the following tag
 ```
